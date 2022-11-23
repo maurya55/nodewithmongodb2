@@ -46,7 +46,7 @@ module.exports = {
             await client.disconnect();
             return res.status(200).json({
                 redisstatus,
-                message: "get data ng2 12",
+                message: "get data ng2",
                 data: getData
             })
         }
