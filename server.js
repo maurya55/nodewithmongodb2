@@ -31,8 +31,8 @@ app.use((err, req, res, next) => {
 
 async function rabbit() {
     const queue = 'tasks';
-    const conn = await amqplib.connect('amqp://localhost');
-    // const conn = await amqplib.connect('amqps://xkqumufe:flJcTjPT68JSo4pVt2Fk249iWCtNi4GH@rabbit.lmq.cloudamqp.com/xkqumufe');
+    // const conn = await amqplib.connect('amqp://localhost');
+    const conn = await amqplib.connect('amqps://xkqumufe:flJcTjPT68JSo4pVt2Fk249iWCtNi4GH@rabbit.lmq.cloudamqp.com/xkqumufe');
 
     // const conn = await amqplib.connect({
     //     protocol: 'amqp',
